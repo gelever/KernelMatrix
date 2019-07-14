@@ -1,0 +1,7 @@
+#ifndef KERNELMATRIX_CONFIG_H
+#define KERNELMATRIX_CONFIG_H
+
+// Place cmake defined variables here
+//#cmakedefine01 KERNELMATRIX_CONFIG_VAR
+
+#endif //KERNELMATRIX_CONFIG_H

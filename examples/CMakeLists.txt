@@ -1,0 +1,2 @@
+add_executable(kernel_matrix kernel_matrix.cpp)
+target_link_libraries(kernel_matrix KernelMatrix)

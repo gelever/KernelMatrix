@@ -1,0 +1,14 @@
+get_filename_component(KernelMatrix_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+list(APPEND CMAKE_MODULE_PATH ${KernelMatrix_CMAKE_DIR})
+
+find_package(linalgcpp REQUIRED)
+
+LIST(REMOVE_AT CMAKE_MODULE_PATH -1)
+
+if(NOT TARGET KernelMatrix::KernelMatrix)
+    include("${KernelMatrix_CMAKE_DIR}/KernelMatrixTargets.cmake")
+endif()
+
+set(KernelMatrix_LIBRARIES KernelMatrix::KernelMatrix)

@@ -1,0 +1,13 @@
+build/
+
+*.sh~
+*.cpp~
+*.hpp~
+*.txt~
+.gitignore~
+*.py~
+*.in~
+*.md~
+*.swp
+*.bak
+.DS_Store
