@@ -3,7 +3,7 @@
 
 #include "linalgcpp.hpp"
 
-namespace KernelMatrix
+namespace KernelMatrixProject
 {
 
 // Aliases to avoid unnecessary type verbosity
@@ -17,8 +17,12 @@ using Operator = linalgcpp::Operator;
 
 using linalgcpp::linalgcpp_verify;
 using linalgcpp::linalgcpp_assert;
+
+using ArgParser = linalgcpp::ArgParser;
 // End Aliases
 
-} // namespace KernelMatrix
+DenseMatrix UnitSquareCoordinates(int refinements = 0);
+
+} // namespace KernelMatrixProject
 
 #endif // KM_UTILITIES_HPP

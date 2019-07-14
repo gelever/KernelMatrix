@@ -36,6 +36,7 @@ enable_testing()
 find_package(linalgcpp REQUIRED)
 
 add_library(KernelMatrix
+    src/kernel_matrix.cpp
     src/km_utilities.cpp
 )
 
