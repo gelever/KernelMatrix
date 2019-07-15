@@ -2,6 +2,8 @@
 
 An example of building your own operator using [linalgcpp](https://github.com/gelever/linalgcpp).
 
+For a more in depth explaination, checkout [http://gelevers.com/2019/07/14/kernel-operator/](http://gelevers.com/2019/07/14/kernel-operator/).
+
 ## Build Instructions
 Follow directions to build  [linalgcpp](https://github.com/gelever/linalgcpp) on your system.
 
