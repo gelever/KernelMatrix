@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 
     // Define some kernel matrices
     KernelMatrix kernel_mat_gauss(data, gauss_kernel, shift);
-    KernelMatrix kernel_mat_poly(data, poly_kernel<2, 0>, shift);
+    KernelMatrix kernel_mat_poly(data, poly_kernel<2, 1>, shift);
     KernelMatrix kernel_mat_distance(data, distance_kernel, shift);
 
     // Create random right hand side

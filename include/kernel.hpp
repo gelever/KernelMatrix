@@ -8,12 +8,12 @@ namespace KernelMatrixProject
 
 using Kernel = std::function<double(const VectorView& x_i, const VectorView& x_j)>;
 
-template <int Degree = 2, int Theta = 0>
+template <int Degree = 2, int Theta = 1>
 auto poly_kernel = [](const VectorView& x_i, const VectorView& x_j)
 {
     double dot_product = x_i.Mult(x_j);
 
-    return std::pow(dot_product, Degree) + Theta;
+    return std::pow(dot_product + Theta, Degree);
 };
 
 auto gauss_kernel = [](const VectorView& x_i, const VectorView& x_j)
